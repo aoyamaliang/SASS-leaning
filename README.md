@@ -20,12 +20,11 @@ $borders: 15px;
 
 
 ＲＷＤ設定：
-使用範例：
-@include desktop{
-  display: grid;
-  ..
-  ..
-  }
+@mixin 可以把常用的語法蒐集起來，需要該語法時再插入 ＠include + 語法名稱 簡化重複性估作
+//建立
+@mixin + 名稱 { 語法內容 }
+//插入
+@include + 名稱 ;
   
 $desktop: 840px;
 
